@@ -1,3 +1,6 @@
+# Don't run this all at once.  
+# It could crate a file, read and write to it and then delete it.
+
 f = open("demofile2.txt", "a")
 f.write("Now the file has more content!")
 f.close()
