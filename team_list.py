@@ -15,8 +15,10 @@ stopped = False
 # Data capture
 with open(filename, 'a',newline="") as file:
     csvwriter = csv.writer(file)
-    while not stopped:
+    while not stopped:  # see alt below from cat_names.py use while True:
         name = input("add a name, type 'F' - Finish: ")
+        #    if name == '':
+        # break     alternate way of stopping the loop. 
         if name == "F":
             stopped = True
         elif name == "f":
