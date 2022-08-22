@@ -13,7 +13,7 @@ name = {}
 filename = "C:\\coding data\\Datadump\\team.csv" 
 stopped = False
 # Data capture
-with open(filename, 'a',newline="") as file:
+with open(filename, 'a', newline="") as file:
     csvwriter = csv.writer(file)
     while not stopped:  # see alt below from cat_names.py use while True:
         name = input("add a name, type 'F' - Finish: ")

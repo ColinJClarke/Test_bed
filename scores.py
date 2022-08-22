@@ -19,18 +19,19 @@ a, b = input("Enter two values: ").split()
 print("First number is {} and second number is {}".format(a, b))
 print()
   
-# taking multiple inputs at a time 
-# and type casting using list() function
+# note the 3 ''' creaate a multiple line comment
+''' taking multiple inputs at a time 
+and type casting using list() function '''
 x = list(map(int, input("Enter multiple values: ").split()))
 print("List of students: ", x)
 
 # note the seperator - input("Enter multiple value: ").split(",")]
 
-# Python program showing
-# how to take multiple input
-# using List comprehension
+''' Python program showing
+how to take multiple input items
+using List comprehension '''
   
-# taking two input at a time
+ # taking two input at a time
 x, y = [int(x) for x in input("Enter two values: ").split()]
 print("First Number is: ", x)
 print("Second Number is: ", y)
@@ -42,6 +43,10 @@ print("First Number is: ", x)
 print("Second Number is: ", y)
 print("Third Number is: ", z)
 print()
+scores= [x,y,z]
+total=sum(scores)
+print()
+print('Total score: ' + str(total))
   
 # taking two inputs at a time
 x, y = [int(x) for x in input("Enter two values: ").split()]
