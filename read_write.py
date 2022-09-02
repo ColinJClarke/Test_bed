@@ -1,5 +1,9 @@
 ''' Don't run this all at once.  
 It could create a file, read and write to it and then delete it.'''
+import os
+
+os.chdir(r'C:\coding data\Output')
+
 
 f = open("demofile2.txt", "a")
 f.write("Now the file has more content!")
@@ -9,7 +13,7 @@ f.close()
 f = open("demofile2.txt", "r")
 print(f.read())
 
-f = open("demofile2.txt", "a")
+f = open("demofile2.txt", "w")    # w  - write (over), a - append
 f.write("Woops! I have deleted the content!")
 f.close()
 
